@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Cycle</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+ </head>
+  <body>
+    <div id="name">
+      <p>Matt Leo</p>
+    </div>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Projects</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </header>
+    <section>
+      <article>
+        <h2>The Value of Cycle</h2>
+        <h3>A Ruby Enumerable Method</h3>
+        <h4>7/24/15</h4>
+          <p>Today I learned about a Ruby enumerable method today called cycle. A short explanation of cycle: when given a collection of items, cycle passes each item to a block of code an infinite number of times until told to break. Cycle is a convenient way to create loops and break them if a specific condition is met. Cycle can also accept an argument as a positive integar which will loop through a collection as many times as you command. Here is an example:</p>
+          <code><p> dogs = ["Buddy", "Fido", "Murphy"]</p></code>
+          <code><p> dogs.cycle { |x| puts x }</p></code>
+          <code><p> Buddy</p></code>
+          <code><p> Fido</p></code>
+          <code><p> Murphy</p></code>
+          <code><p> Buddy</p></code>
+          <code><p> Fido</p></code>
+          <code><p> Murphy</p></code>
+          <code><p> ... forever</p></code>
+          <p>Using the same array <code>dogs</code>, here is an example when you give cycle an argument:</p>
+          <code><p> dogs.cycle(3) { |x| puts x }</p></code>
+          <code><p> Buddy</p></code>
+          <code><p> Fido</p></code>
+          <code><p> Murphy</p></code>
+          <code><p> Buddy</p></code>
+          <code><p> Fido</p></code>
+          <code><p> Murphy</p></code>
+          <code><p> Buddy</p></code>
+          <code><p> Fido</p></code>
+          <code><p> Murphy</p></code>
+          <p></p>This time cycle only ran through the array three times. This should give you a basic understanding of the cycle method. Next time you need to create a loop, give cycle a try!
+          <p></p>
+      </article>
+    </section>
+  </body>
+</html>
