@@ -10,53 +10,79 @@ body {
 }
 
 #name {
-  font-family: Lucida Grande, Helvetica;
-  text-align: center;
+  font-family: PT Serif;
+  padding-left: 128px;
   font-size: 55px;
-  margin-bottom: -40px;
-  margin-top: -40px;
+  margin-bottom: -55px;
+  margin-top: -55px;
+  background: #58A7DB;
+  position: relative;
+}
+
+#media {
+  padding-right: 125px;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+#media a {
+  margin: 5px;
+  text-decoration: none;
 }
 
 header {
   height: 35px;
-  margin-bottom: 20px;
-  background: #66CCFF;
-  width: 80%;
+  margin-bottom: 30px;
+  width: 55%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  border-top: 7px white solid;
+  border-bottom: 1px #C8C8C8 solid;
 }
 
 nav {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   padding-top: 6px;
 }
 
 nav a {
-  margin: 40px;
+  margin: 35px;
   text-decoration: none;
-  font-family: Lucida Grande, Helvetica;
+  font-weight: bold;
+  font-family: Poiret One, Helvetica;
+  color: black;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #C8C8C8;
 }
 
 section {
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  font-family: PT Serif, Helvetica;
 }
 
-section div {
+#me2 {
   float: left;
+}
+
+#me3 {
+  float: right;
 }
 
 article {
   display: inline-block;
   margin: 20px;
   position: absolute;
-  font-family: Lucida Grande, Helvetica;
+  font-family: PT Serif, Helvetica;
+}
+
+#about {
+  width: 60%;
 }
