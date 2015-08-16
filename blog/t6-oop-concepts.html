@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Classes vs Modules</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+ <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+ </head>
+  <body>
+    <div id="name">
+      <p>Matt Leo</p>
+      <div id="media">
+      <a href="https://github.com/mleo5555">
+        <img src="../images/github.png" alt="GitHub" height="40" width="40">
+      </a>
+      <a href="https://www.linkedin.com/in/mrleo">
+        <img src="../images/linkedin2.png" alt="LinkedIn" height="40" width="40">
+      </a>
+      <a href="https://twitter.com/Mleo5555">
+        <img src="../images/twitter2.png" alt="Twitter" height="40" width="40">
+      </a>
+      <a href="https://plus.google.com/103653802962159369728/about">
+        <img src="../images/googleplus1.png" alt="GooglePlus" height="40" width="40">
+      </a>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../resume.html">Resume</a>
+        <a href="#">Projects</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </header>
+    <section>
+      <article>
+        <h2>Classes vs. Modules</h2>
+        <h4>8/16/15</h4>
+        <p>Classes and modules share similarities in Ruby but are utilized in very different ways - let's compare.</p>
+        <h3>Classes</h3>
+        <p>Classes are instantiated and create a new object within Ruby. A class consists of methods, constants, and variables. Think of a class as the blueprints required to create a new object. Let's use an example:</p>
+        <p><code>class Car</code></p>
+          <p><code>&nbsp;&nbsp;&nbsp;def initialize(brand, name)</code></p>
+          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@brand = brand</code></p>
+          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@name = name</code></p>
+          <p><code>&nbsp;&nbsp;&nbsp;end</code></p>
+          <p><code>&nbsp;&nbsp;&nbsp;def vroom</code></p>
+          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;puts 'Vroooom!'</code></p>
+          <p><code>&nbsp;&nbsp;&nbsp;end</code></p>
+          <p><code>&nbsp;&nbsp;&nbsp;def details</code></p>
+          <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;puts "This fine car is a #{@brand} #{@name}."</code></p>
+          <p><code>&nbsp;&nbsp;&nbsp;end</code></p>
+          <p><code>end</code></p>
+          <p>Within the class <code>Car</code> are 3 methods: <code>initialize</code>, <code>vroom</code>, and <code>details</code>. All three methods create the behaviors of the class <code>Car</code>. In order to use a class, you must instantiate it with the following:</p>
+          <code>my_car = Car.new(Ford, Mustang)</code>
+          <p>This code creates a new instance of the class <code>Car</code> called <code>my_car</code> and assigns <code>(Ford, Mustang)</code> to the instance variables <code>(@brand, @name)</code>. Since <code>my_car</code> is an object, methods can be called upon it. For example:</p>
+          <p><code>my_car.details</code> will puts <code>This fine car is a Ford Mustang.</p>
+        <h3>Modules</h3>
+        <p>Unlike classes, modules cannot be instantiated. Think of modules as libraries that hold bundles of methods, constants, and classes. Let's look at the Ruby Math module as an example:</p>
+          <p><code>module Math</code></p>
+          <p><code>&nbsp;&nbsp;&nbsp;PI = 3.141592654</code></p>
+          <p><code>end</code></p>
+        <p>There are other constants and methods within this module but we will keep it simple for now and only refer to the constant PI. Since we cannot instantiate a module, we must extract its data differently than we would for a class. Here are two simple ways access PI:</p>
+        <p><code>puts Math::PI</code></p>
+        <p><code>#=> 3.141592653589793</code></p>
+        <p><code>include Math</code></p>
+        <p><code>puts PI</code></p>
+        <p><code>#=> 3.141592653589793</code></p>
+        <p>The first example uses the constant lookup operator (::). This allows you to scope constants and classes within a module. The second example uses <code>include</code> which allows the mix in of modules into classes.</p>
+      </article>
+    </section>
+  </body>
+</html>
