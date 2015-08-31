@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>GIT CHEAT SHEET</title>
+  <style type="text/css">
+
+  header {
+    font-size: 30px;
+    text-align: center;
+    vertical-align: center;
+    margin: auto;
+    font-family: 'Raleway', san-serif;
+    width: 75%;
+    height: 100px;
+    background-color: white;
+  }
+  article {
+    margin: auto;
+    width: 50%;
+    height: 870px;
+    background-color: blue;
+  }
+  footer {
+    margin: auto;
+    width: 75%;
+    height:100px;
+    background-color: white;
+  }
+  #box-left {
+    clear:both;
+  }
+  #box-right{
+    clear:right;
+  }
+
+  #git-box1 {
+    position: relative;
+    float:right;
+    background-color: cyan;
+    width:50%;
+    height:250px;
+  }
+  #git-box2 {
+    position: relative;
+    float:right;
+    background-color: #989898 ;
+    width:50%;
+    height:250px;
+  }
+  #git-box3 {
+    position: relative;
+    float:left;
+    background-color: cyan;
+    width:50%;
+    height:350px;
+  }
+  #git-box4 {
+    position: relative;
+    float:right;
+    background-color: #989898 ;
+    width:50%;
+    height:350px;
+
+  }
+  #git-box5 {
+    position: relative;
+    float:right;
+    background-color: cyan;
+    width:50%;
+    height:270px;
+
+  }
+  #git-box6 {
+    position: relative;
+    float:right;
+    background-color: #989898 ;
+    width:50%;
+    height:270px;
+
+  }
+
+  h4 {
+    padding-left: 10px;
+    font-family: 'Raleway', san-serif;
+  }
+
+  ul {
+    list-style-type: none;
+    font-family: 'Raleway', san-serif;
+  }
+
+  li {
+    font-size: 15px;
+  }
+
+  </style>
+  </head>
+
+    <body>
+
+    <header><h2>GIT CHEAT SHEET</h2></header>
+
+    <article>
+
+        <div id="box-left">
+
+          <div id="git-box1">
+
+          <h4>Local Changes</h4>
+
+            <ul>
+
+              <li><code>git status</code></li>
+              <li>--Change files in your working directory.</li>
+              <br>
+              <li><code>git add .</code></li>
+              <li>--Add all current changes to the next commit.</li>
+              <br>
+              <li><code>git commit -m "add commit"</code></li>
+              <li>--Commit previously staged changes.</li>
+
+            </ul>
+
+          </div>
+
+          <div id="git-box2">
+
+            <h4>Create</h4>
+
+            <ul>
+
+              <li><code>git clone</code></li>
+              <li>--Clone an existing repository.</li>
+              <br>
+              <li><code>git init</code></li>
+              <li>--Create a new local repository.</p>
+
+            </ul>
+
+          </div>
+
+          <div id="git-box3">
+
+            <h4>Update & Publish</h4>
+
+            <ul>
+
+              <li><code>git remote -v</code></li>
+              <li>--Clone an existing repository.</li>
+              <br>
+              <li><code>git remote add ~name~ ~url~</code></li>
+              <li>--Clone an existing repository.</li>
+              <br>
+              <li><code>git fetch ~remote~</code></li>
+              <li>--Clone an existing repository.</li>
+              <br>
+              <li><code>git pull</code></li>
+              <li>--Clone an existing repository.</li>
+              <br>
+              <li><code>git push</code></li>
+              <li>--Clone an existing repository.</li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div id="box-right">
+
+          <div id="git-box4">
+
+            <h4>Braches & Tags</h4>
+
+            <ul>
+
+              <li><code>git branch -av</code></li>
+              <li>--List all existing branches.</li>
+              <br>
+              <li><code>git checkout ~branch~</code></li>
+              <li>--Switch HEAD branch.</li>
+              <br>
+              <li><code>git branch ~name of branch~</code></li>
+              <li>--Create new branch based on your HEAD.</li>
+              <br>
+              <li><code>git branch -d</code></li>
+              <li>--Delete a local branch.</li>
+
+            </ul>
+
+          </div>
+
+          <div id="git-box5">
+
+            <h4>Merge & Rebase</h4>
+
+            <ul>
+
+              <li><code>git merge ~branch~</code></li>
+              <li>--Merge branch into current HEAD.</li>
+              <br>
+              <li><code>git add ~resolved-file~</code></li>
+              <li>--Solve conflicts and mark file as resolved.</li>
+              <br>
+              <li><code>git rm ~resolved-file~</code></li>
+              <li>--Solve conflicts and mark file as resolved.</li>
+
+            </ul>
+
+          </div>
+
+          <div id="git-box6">
+
+            <h4>Undo</h4>
+
+            <ul>
+
+              <li><code>git reset --hard HEAD</code></li>
+              <li>--Discard all local changes in working directory.</li>
+              <br>
+              <li><code>git checkout HEAD ~file~</code></li>
+              <li>--Discard local changes in a specific file.</li>
+              <br>
+              <li><code>git revert ~commit~</code></li>
+              <li>--Revert a commit.</li>
+
+
+            </ul>
+
+          </div>
+
+        </div>
+
+
+    </article>
+
+
+    <footer></footer>
+
+    </body>
+
+</html>
